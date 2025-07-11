@@ -1,0 +1,27 @@
+[book]
+authors = ["Kaiserkarel"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Interop: Principles, Techniques, and Tools"
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output]
+
+[output.html]
+additional-css = ["src/static/custom.css"]
+additional-js = [
+  "src/static/mermaid.min.js",
+  "src/static/mermaid-init.js",
+  "src/static/tab.js",
+  "src/static/solidity.min.js",
+]
+
+[output.html.code.languages.solidity]
+name = "Solidity"
+
+[preprocessor.shiftinclude]
